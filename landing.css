@@ -1,6 +1,7 @@
 .head {
-  height: 100px;
+  height: 80px;
   background-color: #131313;
+  /*position: fixed;*/
 }
 .home{
   height: 520px;
@@ -10,11 +11,17 @@
   background-color: #131313;
   float: left;
 }
+.instagram{
+  transform: rotate(90deg);
+  color: #e3b873;
+  margin-top: 150%;
+}
 .Group-7 {
   height: 90%;
   object-fit: contain;
   background-size: cover;
   background-image: url("img/Group7.png");
+  background-position: 100% 100%;
   float: left;
 }
 .downPage {
@@ -23,14 +30,18 @@
   background-color: #131313;
 }
 
+.colorCaramelo{
+  color: #e3b873;
+}
 .fonteBase {
   font-family: 'Yeseva One', cursive;
   line-height: 1.33;
 }
 .titulo{
-  font-size: 380%;
+  font-size: 320%;
   color: #e3b873;
 }
+<<<<<<< HEAD
 
 
 .title-depoimentos{
@@ -79,3 +90,47 @@
   height: 58px;
   background-image: url(/img/estevan.svg);
 }
+=======
+.subtitulo{
+ font-size: 130%;
+ line-height: 1.33;
+ color: #ffffff;
+}
+.nav-link{
+  color: #fff;
+}
+.active{
+  color: #e3b873;
+}
+.blocoHome{
+  margin-top: 120px;
+}
+.blocoChamada{
+  font-size: 190%;
+  color: #fff;
+}
+.blocoComplemento{
+  font-size: 110%;
+  font-family: arial;
+  color: #fff;
+  margin-top: 100px;
+}
+.buttonOrcamento {
+  width: 30%;
+  padding: 10px 20px;
+  border-radius: 1px;
+  box-shadow: 0 2.5px 7.5px 0 rgba(227, 184, 115, 0.3);
+  text-shadow: 1px 1px 1px black;
+  background-color: #e3b873;
+  color: #fff;
+  text-align: center;
+}
+.buttonOpiniao {
+  width: 30%;
+  padding: 10px 20px;
+  border-radius: 1px;
+  border: solid 0.5px #ffffff;
+  color: #fff;
+  text-align: center;
+}
+>>>>>>> 8e164e8ee28a1d233ecb6543666871bf95ecedbd
