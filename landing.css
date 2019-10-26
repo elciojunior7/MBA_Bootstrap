@@ -1,0 +1,33 @@
+.head {
+  height: 100px;
+  background-color: #131313;
+}
+.home{
+  height: 520px;
+}
+.Rectangle-510 {
+  height: 90%;
+  background-color: #131313;
+  float: left;
+}
+.Group-7 {
+  height: 90%;
+  object-fit: contain;
+  background-size: cover;
+  background-image: url("img/Group7.png");
+  float: left;
+}
+.downPage {
+  width: 123.5px;
+  height: 48.5px;
+  background-color: #131313;
+}
+
+.fonteBase {
+  font-family: 'Yeseva One', cursive;
+  line-height: 1.33;
+}
+.titulo{
+  font-size: 380%;
+  color: #e3b873;
+}
