@@ -40,6 +40,7 @@ ul.nav li a:hover{
 }
 .home{
   height: 800px;
+  background-color: #131313;
 }
 .grupoInsta {
   height: 90%;
@@ -120,13 +121,70 @@ ul.nav li a:hover{
   background-color: #131313;
   background-position: center;
   position: absolute;
-  top: 730px;
+  top: 750px;
 }
+
+#portfolio{
+  height: 750px;
+  background-color: #131313;
+}
+.menuPortfolio span a{
+  color: white;
+  font-family: 'Yeseva One', cursive;
+  font-size: 110%;
+  padding-left: 0;
+}
+.menuPortfolio span a:hover{
+  text-decoration: none;
+  border-bottom: 2px solid #e3b873;
+  border-bottom: 2px solid white;
+}
+.menuPortfolio span a.active{
+  color: #e3b873;
+  border-bottom: 2px solid #e3b873;
+}
+.menuPortfolio span a.active:hover{
+  text-decoration: none;
+}
+.boxDescricao{
+  margin-top: 80px;
+  color: white;
+}
+.linhaDesc{
+  width: 120px;
+  height: 1px;
+  background-image: url("img/linhaDesc.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0 auto;
+  margin-bottom: 60px;
+}
+.descricao1{
+  font-family: Rancho;
+  font-size: 120%;
+  letter-spacing: 1px;
+}
+.subBoxDescricao{
+  margin-top: 100px;
+}
+.descricaoModelo{
+  font-family: 'Yeseva One', cursive;
+  color: #e3b873;
+  font-size: 120%;
+}
+.descricaoModeloDesc{
+  font-family: Rancho;
+}
+.carousel-item{
+  height: 600px;
+}
+
 .marketing{
   padding-bottom: 7%;
 }
 .blocoTituloDepo{
   margin-bottom: 50px;
+  margin-top: 50px;
 }
 .tituloDepoimentos{
   font-family: 'Yeseva One', cursive;
@@ -229,18 +287,19 @@ ul.nav li a:hover{
   background-color: white;
 }
 
+
 /*-------------------------------- 1600 -------------------------------*/
 @media screen and (min-width: 1600px) and (max-width: 1919px) {
   
 }
 
 /*-------------------------- 1280 --------------------------*/
-@media screen and (min-width: 1280px) and (max-width: 1599px) {
+@media screen and (min-width: 1210px) and (max-width: 1599px) {
   
 }
 
 /*---------------- 993 ---------------------*/
-@media screen and (min-width: 993px) and (max-width: 1279px) {
+@media screen and (min-width: 993px) and (max-width: 1209px) {
   .home{
     height: 700px;
   }
@@ -263,6 +322,13 @@ ul.nav li a:hover{
   .suaOpiniao{
     height: 600px;
   }
+  #portfolio{
+    height: 600px;
+    background-color: #131313;
+  }
+  #carouselControls{
+    display:  none;
+  }
 }
 
 /*---------------- mobile_993 ---------------------*/
@@ -282,10 +348,17 @@ ul.nav li a:hover{
   .descaPag {
     height: 50px;
     background-image: url("img/downPage2x.png");
-    top: 520px;
+    top: 540px;
   }
   .suaOpiniao{
     height: 600px;
+  }
+  #portfolio{
+    height: 680px;
+    background-color: #131313;
+  }
+  #carouselControls{
+    display:  none;
   }
 }
 
