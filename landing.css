@@ -1,12 +1,47 @@
+@font-face{
+  font-family: 'Rancho';
+  src: url("fonts/Rancho.ttf");
+}
+
+/*---------------------------- 1920 -------------------------------*/
 .head {
   height: 80px;
   background-color: #131313;
   /*position: fixed;*/
 }
-.home{
-  height: 520px;
+.colorCaramelo{
+  color: #e3b873;
 }
-.Rectangle-510 {
+.titulo{
+  font-size: 320%;
+  color: #e3b873;
+  margin-top: 6px;
+}
+.fonteBase {
+  font-family: 'Yeseva One', cursive;
+  line-height: 1.33;
+}
+.subtitulo{
+font-family: arial;
+ font-size: 45%;
+ line-height: 1.33;
+ color: #ffffff;
+}
+ul.nav li a{
+  margin-top: 20px;
+}
+ul.nav li a.active:hover{
+  text-decoration: underline;
+  color: #e3b873;
+}
+ul.nav li a:hover{
+  text-decoration: underline;
+  color: white;
+}
+.home{
+  height: 800px;
+}
+.grupoInsta {
   height: 90%;
   background-color: #131313;
   float: left;
@@ -14,85 +49,7 @@
 .instagram{
   transform: rotate(90deg);
   color: #e3b873;
-  margin-top: 150%;
-}
-.Group-7 {
-  height: 90%;
-  object-fit: contain;
-  background-size: cover;
-  background-image: url("img/Group7.png");
-  background-position: 100% 100%;
-  float: left;
-}
-.downPage {
-  width: 123.5px;
-  height: 48.5px;
-  background-color: #131313;
-}
-
-.colorCaramelo{
-  color: #e3b873;
-}
-.fonteBase {
-  font-family: 'Yeseva One', cursive;
-  line-height: 1.33;
-}
-.titulo{
-  font-size: 320%;
-  color: #e3b873;
-}
-
-.title-depoimentos{
-  width: 89px;
-  height: 21px;
-  font-family: YesevaOne;
-  font-size: 9px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.29;
-  letter-spacing: normal;
-  color: #181818;  
-}
-
-.home-depoimentos {
-  width: 719px;
-  height: 1415px;
-  background-color: #ffffff;
-}
-
-.rectangle-depoimentos {
-  width: 188px;
-  height: 214px;
-  box-shadow: 0 5px 25px 0 rgba(0, 0, 0, 0.04);
-  background-color: #ffffff;
-}
-
-.rectangle-text-depoimentos {
-  width: 162px;
-  height: 67.5px;
-  object-fit: contain;
-  text-shadow: 0 2px 3px rgba(0, 0, 0, 0.18);
-  font-family: Rancho;
-  font-size: 7.5px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.8;
-  letter-spacing: normal;
-  color: #959595;
-}
-
-.retangle-image-depoimentos {
-  width: 58px;
-  height: 58px;
-  background-image: url(/img/estevan.svg);
-}
-
-.subtitulo{
- font-size: 130%;
- line-height: 1.33;
- color: #ffffff;
+  margin-top: 280px;
 }
 .nav-link{
   color: #fff;
@@ -100,8 +57,16 @@
 .active{
   color: #e3b873;
 }
+.grupoHome {
+  height: 90%;
+  object-fit: contain;
+  background-size: cover;
+  background-image: url("img/table.jpg");
+  background-position: cover;
+  float: left;
+}
 .blocoHome{
-  margin-top: 120px;
+  margin-top: 11%;
 }
 .blocoChamada{
   font-size: 190%;
@@ -111,23 +76,229 @@
   font-size: 110%;
   font-family: arial;
   color: #fff;
-  margin-top: 100px;
+  margin-top: 7%;
+}
+.boxButtons{
+  font-weight: bold;
+  font-size: 125%;
+}
+.boxButtons a{
+  text-decoration: none;
+  color: white;
 }
 .buttonOrcamento {
-  width: 30%;
   padding: 10px 20px;
   border-radius: 1px;
   box-shadow: 0 2.5px 7.5px 0 rgba(227, 184, 115, 0.3);
-  text-shadow: 1px 1px 1px black;
+  text-shadow: 0.5px 0.5px 0.5px black;
   background-color: #e3b873;
   color: #fff;
   text-align: center;
+  transition: all 0.3s;
+}
+.buttonOrcamento:hover {
+  transition: all 0.3s;
+  color: #e3b873;
+  background-color: white;
 }
 .buttonOpiniao {
-  width: 30%;
   padding: 10px 20px;
   border-radius: 1px;
   border: solid 0.5px #ffffff;
   color: #fff;
   text-align: center;
+}
+.buttonOpiniao:hover {
+  transition: all 0.3s;
+  color: #e3b873;
+  background-color: white;
+}
+.descaPag {
+  height: 70px;
+  background-image: url("img/downPage2x.png");
+  background-repeat: no-repeat;
+  background-color: #131313;
+  background-position: center;
+  position: absolute;
+  top: 730px;
+}
+.marketing{
+  padding-bottom: 7%;
+}
+.blocoTituloDepo{
+  margin-bottom: 50px;
+}
+.tituloDepoimentos{
+  font-family: 'Yeseva One', cursive;
+  font-size: 160%;
+  text-align: center;
+}
+.iconeDepoimentos {
+  height: 70px;
+  background-image: url("img/iconDepo2x.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.percentualDepoimentos{
+  font-family: Rancho;
+  font-size: 130%;
+  text-align: center;
+}
+.home-depoimentos {
+  width: 719px;
+  height: 1415px;
+  background-color: #ffffff;
+}
+.boxDepoMsg {
+  font-family: 'Yeseva One', cursive;
+  font-size: 120%;
+  line-height: 1.29;
+  color: #181818;
+  margin-left: 2%;
+}
+.rectangle-text-depoimentos {
+  object-fit: contain;
+  text-shadow: 0 2px 3px rgba(0, 0, 0, 0.18);
+  font-family: Rancho;
+  font-size: 110%;
+  letter-spacing: .8px;
+  color: #959595;
+}
+.retangle-image-depoimentos {
+  width: 58px;
+  height: 58px;
+  background-repeat: no-repeat;
+  display: inline-block;
+}
+.depo1{
+  background-image: url("img/leila2x.png");
+  background-position: 50% 30%;
+}
+.depo2{
+  background-image: url("img/estevan2x.png");
+  background-position: 50% 10%;
+}
+.depo3{
+  background-image: url("img/thiago2x.png");
+  background-position: 52% 15%;
+}
+
+.suaOpiniao{
+  height: 500px;
+  background-color: #131313;
+  color: white;
+}
+.tituloOpiniao{
+  font-family: 'Yeseva One', cursive;
+  font-size: 160%;
+  text-align: center;
+  margin-top: 40px;
+}
+.suaOpiniao form{
+  margin-top: 40px;
+}
+.suaOpiniao form input, .suaOpiniao form label{
+  font-family: Rancho;
+  font-size: 120%;
+  letter-spacing: 0.5px;
+}
+.espacador{
+  height: 25px;
+}
+.espacadorDuplo{
+  height: 40px;
+}
+.custom-control-input:checked ~ .custom-control-label::before {
+  color: #fff;
+  border-color: #e3b873;
+  background-color: #e3b873;
+}
+.buttonEnviarOpiniao {
+  padding: 10px 20px;
+  border-radius: 1px;
+  box-shadow: 0 2.5px 7.5px 0 rgba(227, 184, 115, 0.3);
+  background-color: #e3b873;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  transition: all 0.3s;
+}
+.buttonEnviarOpiniao:hover {
+  transition: all 0.3s;
+  color: #e3b873;
+  background-color: white;
+}
+
+/*-------------------------------- 1600 -------------------------------*/
+@media screen and (min-width: 1600px) and (max-width: 1919px) {
+  
+}
+
+/*-------------------------- 1280 --------------------------*/
+@media screen and (min-width: 1280px) and (max-width: 1599px) {
+  
+}
+
+/*---------------- 993 ---------------------*/
+@media screen and (min-width: 993px) and (max-width: 1279px) {
+  .home{
+    height: 700px;
+  }
+  .instagram{
+    margin-top: 180px;
+  }
+  .blocoHome p{
+
+  }
+  .blocoChamada{
+    font-size: 170%;
+  }
+  .boxButtons{
+    font-weight: normal;
+    font-size: 100%;
+  }
+  .descaPag {
+    top: 640px;
+  }
+  .suaOpiniao{
+    height: 600px;
+  }
+}
+
+/*---------------- mobile_993 ---------------------*/
+@media screen and (max-width: 992px) {
+  .home{
+    height: 550px;
+  }
+  .instagram{
+    margin-top: 110px;
+  }
+  .blocoChamada{
+    font-size: 190%;
+  }
+  .boxButtons{
+    font-size: 150%;
+  }
+  .descaPag {
+    height: 50px;
+    background-image: url("img/downPage2x.png");
+    top: 520px;
+  }
+  .suaOpiniao{
+    height: 600px;
+  }
+}
+
+/*---------------- mobile_499 ---------------------*/
+@media screen and (max-width: 499px) {
+  .home{
+    height: 650px;
+  }
+  .blocoChamada{
+    font-size: 160%;
+  }
+  .boxButtons{
+    font-size: 120%;
+  }
+  
 }

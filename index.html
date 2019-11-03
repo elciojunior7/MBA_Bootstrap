@@ -11,19 +11,18 @@
     <link rel="stylesheet" href="landing.css">    
   </head>
   <body>
-    <div class="container-fluid">
+    <div class="container-fluid" id="home">
       <div class="row head">
-        <span class="fonteBase titulo offset-sm-1">BILLIARDS</span>
-        <span class="subtitulo">MESAS DE BILHAR</span>
-        <ul class="nav offset-sm-3">
+        <div class="fonteBase titulo offset-sm-1">BILLIARDS <span class="subtitulo">MESAS DE BILHAR</span></div>    
+        <ul class="nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link active" href="#">HOME</a>
+            <a class="nav-link active" href="#home">HOME</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">PORTFÓLIO</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">DEPOIMENTOS</a>
+            <a class="nav-link" href="#depoimentos">DEPOIMENTOS</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">CONTATO</a>
@@ -31,60 +30,88 @@
         </ul>
       </div>
       <div class="row home">
-          <div class="Rectangle-510 col-sm-1"><div class="instagram">INSTAGRAM</div></div>
-          <div class="Group-7 col-sm-11">
-            <div class="blocoHome col-sm-5">
-              <span class="fonteBase blocoChamada">MESAS DE QUALIDADE E REQUINTE <span class="colorCaramelo">PARA VOCÊ</span></span><br/><br/>
-              <span class="blocoComplemento">Mesas de bilhar <span class="colorCaramelo">personalizadas</span> e feitas <span class="colorCaramelo">artesanalmente</span>.
-                Porporcionamos uma experiência ímpar pessoas que valorizam o seu lazer.</span>
+          <div class="grupoInsta col-md-1 d-none d-md-block">
+            <div class="instagram">-------------- INSTAGRAM --------------</div>
+          </div>
+          <div class="grupoHome col-md-11">
+            <div class="blocoHome col-lg-6 col-12">
+              <p class="fonteBase blocoChamada text-center text-lg-left">MESAS DE QUALIDADE E REQUINTE <span class="colorCaramelo">PARA VOCÊ</span></p>
+              <p class="blocoComplemento text-center text-lg-left">Mesas de bilhar <span class="colorCaramelo">personalizadas</span> e feitas <span class="colorCaramelo">artesanalmente</span>.
+                Porporcionamos uma experiência ímpar pessoas que valorizam o seu lazer.</p>
               <br/><br/>
-              <div class="row justify-content-md-center" >
-                <span class="buttonOrcamento justify-content-md-center">
-                  Orçamento
-                </span>
-                <span class="buttonOpiniao offset-sm-1">
+              <div class="row boxButtons justify-content-center" >
+                <a href="#" class="buttonOrcamento col-md-4 col-10">
+                  ORÇAMENTO
+                </a>
+                <a href="#opiniao" class="buttonOpiniao offset-md-1 col-md-4 col-10">
                   Sua Opinião
-                </span>
+                </a>
             </div>
           </div>
-      </div>
-
+        </div>
+        <a class="descaPag col-md-3 col-lg-2 d-none d-md-block" href="#depoimentos"></a>
       </div>
     </div>
-
-
-<!-- Marketing messaging and featurettes
-  ================================================== -->
-  <!-- Wrap the rest of the page in another container to center all the content. -->
-
-  <div class="container marketing">
-
-      <!-- Three columns of text below the carousel -->
+    <div class="container marketing" id="depoimentos">
+      <div class="row blocoTituloDepo">
+        <span class="tituloDepoimentos col-12">DEPOIMENTOS</span>
+        <span class="iconeDepoimentos col-12"></span>
+        <span class="percentualDepoimentos col-12">80% dos nossos clientes nos recomendam para seus amigos e familiares</span>
+      </div>
       <div class="row">
-        <div class="col-lg-4">
-          <img class="bd-placeholder-img rounded-circle retangle-image-depoimentos" src="img/estevan.svg" alt="people"  />
-          <h2>Leila Rocha Cavalcanti</h2>
+        <div class="col-lg-4 shadow mb-5 rounded">
+          <div class=" rounded-circle retangle-image-depoimentos depo1"></div>
+          <span class="boxDepoMsg">Leila Rocha Cavalcanti</span><br/><br/>
           <p>
-            <span="rectangle-text-depoimentos"> Foi minha primeira compra e com certeza farei outras. Ótima empresa, rapidez na entrega, sou do Rio de Janeiro e chegou tudo certo e bem embalado. Parabéns, continuem assim! Recomendo a todos. </span>
+            <span class="rectangle-text-depoimentos"> Foi minha primeira compra e com certeza farei outras. Ótima empresa, rapidez na entrega, sou do Rio de Janeiro e chegou tudo certo e bem embalado. Parabéns, continuem assim! Recomendo a todos. </span>
           </p>
-                    
         </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-            <img class="bd-placeholder-img rounded-circle retangle-image-depoimentos"  width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em"></text>
-          
-          <h2>Estevan Correia Cunha</h2>
+        <div class="col-lg-4 shadow mb-5 rounded">
+          <div class=" rounded-circle retangle-image-depoimentos depo2"></div>
+          <!--img src="img/estevan2x.png" alt="people" /-->
+          <span class="boxDepoMsg">Estevan Correia Cunha</span><br/><br/>
           <p>
-            <span="rectangle-text-depoimentos">  Gostei bastante de comprar na BILLIARDS. Em relação ao produto, achei o preço ótimo, bem abaixo do cobrado em São Paulo. Acompanhei minha compra através dos e-mails recebidos e recebi meu produto em ótimo estado e dentro do prazo. Recomendo muito! </span>
+            <span class="rectangle-text-depoimentos">  Gostei bastante de comprar na BILLIARDS. Em relação ao produto, achei o preço ótimo, bem abaixo do cobrado em São Paulo. Acompanhei minha compra através dos e-mails recebidos e recebi meu produto em ótimo estado e dentro do prazo. Recomendo muito! </span>
           </p>          
         </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <svg class="bd-placeholder-img rounded-circle retangle-image-depoimentos" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-          <h2>Thiago Gomes Cardoso</h2>
+        <div class="col-lg-4 shadow mb-5 rounded">
+          <div class=" rounded-circle retangle-image-depoimentos depo3"></div>
+          <span class="boxDepoMsg">Thiago Gomes Cardoso</span><br/><br/>
           <p>
-            <span="rectangle-text-depoimentos">  Parabéns a toda equipe da Billiards, que trabalharam com agilidade e responsabilidade. Estou muito satisfeito com os serviços prestados e o produto que comprei. Espero em breve poder realizar outra compra. Obrigado. </span>
+            <span class="rectangle-text-depoimentos">  Parabéns a toda equipe da Billiards, que trabalharam com agilidade e responsabilidade. Estou muito satisfeito com os serviços prestados e o produto que comprei. Espero em breve poder realizar outra compra. Obrigado. </span>
           </p>          
         </div><!-- /.col-lg-4 -->
       </div><!-- /.row -->
+    </div>
+    <div class="container-fluid suaOpiniao" id="opiniao">
+      <div class="row"><span class="tituloOpiniao col-12">ENVIE SUA OPINIÃO</span></div>
+      <form>
+        <div class="row justify-content-center">
+          <div class="col-sm-4 ">
+            <input type="text" class="form-control" placeholder="Nome">
+          </div>
+          <div class="col-sm-4 ">
+            <input type="email" class="form-control" placeholder="E-mail">
+          </div>
+          <div class="w-100 espacador"></div>
+          <div class="col-sm-8">
+            <label for="exampleFormControlTextarea1">Compartilhe conosco sua opinião sobre nós</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+          <div class="w-100 espacador"></div>
+          <div class="col-sm-4">
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="checkValidador">
+              <label class="custom-control-label" for="checkValidador">Concordo com o processamento de dados pessoais</label>
+            </div>
+          </div>
+          <div class="w-100 espacadorDuplo"></div>
+          <a href="#home" class="buttonEnviarOpiniao col-sm-4 col-10">
+            ENVIAR
+          </a>
+        </div>
+      </form>
+    </div>
 
   </body>
 </html>
