@@ -34,7 +34,7 @@
       </div>
       <div class="row home">
           <div class="grupoInsta col-md-1 d-none d-md-block">
-            <div class="instagram">-------------- INSTAGRAM --------------</div>
+            <div class="instagram">------------- INSTAGRAM -------------</div>
           </div>
           <div class="grupoHome col-md-11">
             <div class="blocoHome col-lg-6 col-12">
@@ -43,9 +43,13 @@
                 Porporcionamos uma experiência ímpar pessoas que valorizam o seu lazer.</p>
               <br/><br/>
               <div class="row boxButtons justify-content-center" >
-                <a href="#" class="buttonOrcamento col-md-4 col-10">
+
+                <!-- Botão para acionar modal -->
+                <button type="button" class="buttonOrcamento col-md-4 col-10" data-toggle="modal" data-target="#modalOrcamento">
                   ORÇAMENTO
-                </a>
+                </button>
+
+
                 <a href="#opiniao" class="buttonOpiniao offset-md-1 col-md-4 col-10">
                   Sua Opinião
                 </a>
@@ -174,6 +178,40 @@
         </div>
       </form>
     </div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="modalOrcamento" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Preencha seus dados abaixo para receber um orçamento</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="recipient-name" class="col-form-label labelNome">Nome</label>
+            <input type="text" class="form-control lineNome" id="recipient-name">
+    
+        
+            <label for="recipient-name" class="col-form-label labelNome" style="margin-top: 28px;"  >Email</label>
+            <input type="text" class="form-control lineNome" id="recipient-name">
+      
+
+            <label for="recipient-name" class="col-form-label labelNome" style="margin-top: 28px;"  >Mesa Desejada</label>
+            <input type="text" class="form-control lineNome" id="recipient-name">
+          </div>          
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary enviar" data-dismiss="modal">Enviar</button>
+      </div>
+    </div>
+  </div>
+</div>    
 
   </body>
 </html>
